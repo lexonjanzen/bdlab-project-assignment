@@ -48,3 +48,27 @@ In summary, our levels should be implemented as follows:
 * visualization via Matplotlib/Plotly/other framework
 
 Because we’re not quite sure if our approach is correct, some decisions are not final yet. In case of questions, please add a comment on the github repository.
+
+# Used software and components #
+
+* Cloudera Version 5.12 via QuickVM (centOS 6.7)
+* Anaconda 4.3.1
+* CDH 5 5.12.0-1.cdh5.12.0.p0.29
+* KAFKA 3.0.0-1.3.0.0.p0.40
+* Spark Version 1.6
+* Jupyter Notebook
+* Python 2.7 via Jupyter
+
+# Installation steps #
+
+* Cloudera Manager -> Parcels: 
+  * download and activate distributed CDH-5 
+  * download and activate distributed Anaconda
+  * download and activate distributed Kafka
+  
+* Import CSV to HDFS
+  * hdfs dfs -put /localdirectory/file.csv /hdfsdirectory/
+
+* Start jupyter with custom settings
+  * see start script for detailed information
+  
